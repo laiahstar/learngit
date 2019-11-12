@@ -24,7 +24,7 @@ git reset HEAD <file> 从暂存区回到工作区，再利用工作区撤销更�
 
 场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。
 
-Creating a new branch is quickly.
+Creating a new branch is very quickly.
 
 要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
 
