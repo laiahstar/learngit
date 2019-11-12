@@ -61,3 +61,15 @@ git stash apply 恢复，然后删除stash内容，使用git stash drop
 git stash pop ,恢复的同时把stash内容也删除
 ##Feature分支
 开发一个新的分支，如果要丢弃一个没有被合并过的分支，可以通过 git branch -D <name>强行删除分支
+
+##标签管理
+发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。
+创建标签：
+默认标签是打在最新提交的commit上的。有时候，如果忘了打标签，方法是找到历史提交的commit id，然后打上就可以了
+查看commit id命令：git log --pretty=oneline --abbrev-commit 
+命令git tag <tagname>用于新建一个标签，默认为HEAD，也可以指定一个commit id；
+命令git tag -a <tagname> -m "blablabla..."可以指定标签信息
+命令git show <tagname> 可以查看标签的说明文字
+命令git tag可以查看所有标签。
+操作标签：
+命令 git tag -d <tagname> 用于删除标签
