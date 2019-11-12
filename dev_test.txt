@@ -1,4 +1,5 @@
 远程dev分支需要与本地dev关联，使用命令：git branch --set-upstream-to=origin/dev dev
+
 多人协作的工作模式通常是这样：
 
 首先，可以试图用git push origin <branch-name>推送自己的修改；
@@ -25,3 +26,5 @@
 建立本地分支和远程分支的关联，使用git branch --set-upstream branch-name origin/branch-name；
 
 从远程抓取分支，使用git pull，如果有冲突，要先处理冲突。
+
+
