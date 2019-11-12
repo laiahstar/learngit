@@ -55,3 +55,7 @@ Git鼓励大量使用分支：
 用git log --graph命令可以看到分支合并图。
 
 ##分支管理策略
+git stash 当接到临时调整的任务，同时当前任务不能commit的时候，可以先保存当前工作区，然后切换到其它分支去执行任务
+git stash list 用于查看刚才保存的工作现场
+git stash apply 恢复，然后删除stash内容，使用git stash drop
+git stash pop ,恢复的同时把stash内容也删除
