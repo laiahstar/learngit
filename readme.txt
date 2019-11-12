@@ -59,3 +59,5 @@ git stash 当接到临时调整的任务，同时当前任务不能commit的时�
 git stash list 用于查看刚才保存的工作现场
 git stash apply 恢复，然后删除stash内容，使用git stash drop
 git stash pop ,恢复的同时把stash内容也删除
+##Feature分支
+开发一个新的分支，如果要丢弃一个没有被合并过的分支，可以通过 git branch -D <name>强行删除分支
