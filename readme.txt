@@ -72,4 +72,7 @@ git stash pop ,恢复的同时把stash内容也删除
 命令git show <tagname> 可以查看标签的说明文字
 命令git tag可以查看所有标签。
 操作标签：
-命令 git tag -d <tagname> 用于删除标签
+命令git push origin <tagname>可以推送一个本地标签；
+命令git push origin --tags可以推送全部未推送过的本地标签；
+命令git tag -d <tagname>可以删除一个本地标签；
+命令git push origin :refs/tags/<tagname>可以删除一个远程标签。
